@@ -11,15 +11,14 @@ func main() {
 	accessKey := os.Getenv("twitter_access_key")
 	accessToken := os.Getenv("twitter_access_token")
 	secretAccessToken := os.Getenv("twitter_access_secret_token")
-
 	collectTweets(consumerKey, accessKey, accessToken, secretAccessToken)
 
 	r := gin.Default()
 
 	r.GET("/", func(c *gin.Context) {
-		c.JSON(200, gin.H {
+		c.JSON(200, gin.H{
 			"consumerKey": consumerKey,
-			"accessKey":accessKey,
+			"accessKey":   accessKey,
 		})
 	})
 

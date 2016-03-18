@@ -1,0 +1,23 @@
+// TODO: Fetch tweets in batches
+// Try to not grab ones we already have
+
+// TODO: Process tweets (gather id, text, twitter handle, picture)
+
+// TODO: Create stripped-tweet object
+
+// TODO: Create challenge from tweet (strip out name, create options for blank name)
+
+// TODO: Store stripped-tweets challenges (Create datastructure if we're storing in memory) (hash)
+// - Tyler
+
+// TODO: Create endpoint to fetch a batch of challenges
+
+// TODO: Learn Emberjs
+
+// TODO: Collect funny pictures
+
+
+
+Other thoughts:
+
+- Show media
