@@ -26,5 +26,12 @@ func main() {
 		})
 	})
 
+	tweets := collectTweets(consumerKey, accessKey, accessToken, secretAccessToken)
+
+	println(len(tweets))
+	for j := 0; j < len(tweets); j++ {
+		println(tweets[j].Text)
+	}
+
 	r.Run()
 }

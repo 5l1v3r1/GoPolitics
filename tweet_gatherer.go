@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func collectTweets(consumerKey, accessKey, accessToken, accessTokenSecret string) {
+func collectTweets(consumerKey, accessKey, accessToken, accessTokenSecret string) []anaconda.Tweet {
 
 	const TRUMP = "Trump"
 	const CRUZ = "Cruz"
@@ -15,7 +15,7 @@ func collectTweets(consumerKey, accessKey, accessToken, accessTokenSecret string
 	const CLINTON = "Clinton"
 	const TWEETS_COUNT = 200
 
-	var tweets [5 * TWEETS_COUNT]anaconda.Tweet
+	tweets := make([]anaconda.Tweet, 5 * TWEETS_COUNT)
 	i := 0
 
 	anaconda.SetConsumerKey(consumerKey)
@@ -55,7 +55,8 @@ func collectTweets(consumerKey, accessKey, accessToken, accessTokenSecret string
 		i++
 	}
 
-	// Return tweets[] when ready
-
 	println("OK")
+
+	// Return tweets[] when ready
+	return tweets
 }
