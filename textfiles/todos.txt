@@ -1,5 +1,8 @@
 // TODO: Fetch tweets in batches
 // Try to not grab ones we already have
+// Don't grab retweets
+// Ignore tweets with urls
+// Ignore tweets if they are multi part (we dont want just part 1 of 2, etc..)
 
 // TODO: Process tweets (gather id, text, twitter handle, picture)
 

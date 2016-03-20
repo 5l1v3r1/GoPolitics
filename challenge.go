@@ -33,3 +33,4 @@ func NewChallenge(tweet anaconda.Tweet) *Challenge {
 
 	return &c
 }
+
